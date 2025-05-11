@@ -1,0 +1,14 @@
+const multer = require("multer");
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
+const cloudinary = require('../config/Cloudinary');
+
+const storage = new CloudinaryStorage({
+    cloudinary: cloudinary,
+    params:{
+        folder:"Zeo/Users/Profile-Image",
+        allowed_formats: ['jpg', 'png', 'jpeg'],
+    }
+})
+
+const parser = multer({ storage: storage });
+module.exports = parser;
