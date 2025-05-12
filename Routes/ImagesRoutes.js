@@ -11,7 +11,7 @@ router.post('/profile-image', upload.single('image'), ImagesControllers.uploadPh
 
                              // Upload Rules Images//
 const Rule = require('../Middlewares/Multer-Rules-Images'); // parser
-router.post('/Rule-image', Rule.single('image'), ImagesControllers.uploadPhoto);
+router.post('/rule-image', Rule.single('image'), ImagesControllers.uploadPhoto);
 
 
 module.exports = router;
