@@ -26,7 +26,9 @@ router.post('/store-category', StoreCategories.single('image'), ImagesController
 const StorePII = require('../Middlewares/Multer-Users-StorePII'); // parser
 router.post('/store-PII', StorePII.single('image'), ImagesControllers.uploadPhoto);
 
-
+                            // Upload Store-Logo Images//
+const StoreLogo = require('../Middlewares/Multer-Users-StoreLogo'); // parser
+router.post('/store-logo', StoreLogo.single('image'), ImagesControllers.uploadPhoto);
 
 
 
