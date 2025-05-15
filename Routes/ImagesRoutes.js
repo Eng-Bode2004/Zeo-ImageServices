@@ -21,4 +21,13 @@ router.post('/store-types', StoreTypes.single('image'), ImagesControllers.upload
                             // Upload Store Categories Images//
 const StoreCategories = require('../Middlewares/Multer-Users-StoreCategories'); // parser
 router.post('/store-category', StoreCategories.single('image'), ImagesControllers.uploadPhoto);
+
+                             // Upload Store-PII Images//
+const StorePII = require('../Middlewares/Multer-Users-StorePII'); // parser
+router.post('/store-PII', StorePII.single('image'), ImagesControllers.uploadPhoto);
+
+
+
+
+
 module.exports = router;
