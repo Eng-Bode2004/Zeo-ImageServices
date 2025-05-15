@@ -1,6 +1,4 @@
 const Image = require("../Models/Images");
-const Middleware = require("../Middlewares/Multer-Users-ProfileImage");
-
 class ImageServices {
     async uploadPhoto(ImageData) {
         try {

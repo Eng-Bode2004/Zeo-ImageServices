@@ -18,4 +18,7 @@ const StoreTypes = require('../Middlewares/Multer-Users-StoreTypes'); // parser
 router.post('/store-types', StoreTypes.single('image'), ImagesControllers.uploadPhoto);
 
 
+                            // Upload Store Categories Images//
+const StoreCategories = require('../Middlewares/Multer-Users-StoreCategories'); // parser
+router.post('/store-types', StoreCategories.single('image'), ImagesControllers.uploadPhoto);
 module.exports = router;
