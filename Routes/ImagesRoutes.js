@@ -30,6 +30,9 @@ router.post('/store-PII', StorePII.single('image'), ImagesControllers.uploadPhot
 const StoreLogo = require('../Middlewares/Multer-Users-StoreLogo'); // parser
 router.post('/store-logo', StoreLogo.single('image'), ImagesControllers.uploadPhoto);
 
+                                // Upload Store-Cover Image Images//
+const StoreCover = require('../Middlewares/Multer-Users-StoreCoverImage'); // parser
+router.post('/store-cover', StoreCover.single('image'), ImagesControllers.uploadPhoto);
 
 
 module.exports = router;
