@@ -36,7 +36,7 @@ router.post('/store-cover', StoreCover.single('image'), ImagesControllers.upload
 
                                 // Upload Mamas Kitchen Item  Images//
 const MamasKitchenItem = require('../Middlewares/Multer-Users-MamasKitchenItem'); // parser
-router.post('/store-cover', MamasKitchenItem.single('image'), ImagesControllers.uploadPhoto);
+router.post('/mamas-kitchen', MamasKitchenItem.single('image'), ImagesControllers.uploadPhoto);
 
 
 
