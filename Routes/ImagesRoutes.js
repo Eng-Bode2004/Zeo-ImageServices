@@ -34,5 +34,12 @@ router.post('/store-logo', StoreLogo.single('image'), ImagesControllers.uploadPh
 const StoreCover = require('../Middlewares/Multer-Users-StoreCoverImage'); // parser
 router.post('/store-cover', StoreCover.single('image'), ImagesControllers.uploadPhoto);
 
+                                // Upload Mamas Kitchen Item  Images//
+const MamasKitchenItem = require('../Middlewares/Multer-Users-MamasKitchenItem'); // parser
+router.post('/store-cover', MamasKitchenItem.single('image'), ImagesControllers.uploadPhoto);
+
+
+
+
 
 module.exports = router;
